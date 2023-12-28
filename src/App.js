@@ -16,7 +16,7 @@ import EditEmployee from './components/Editemploye';
 import Editinout from './components/Editentry';
 import Cookies from 'js-cookie';
 
-axiosInstance.defaults.baseURL = "https://employesystem-eosin.vercel.app";
+axiosInstance.defaults.baseURL = "http://localhost:4000";
 const isAdmin = () => {
   const userEmail = Cookies.get('user_email');
   return userEmail === 'admin@gmail.com';
